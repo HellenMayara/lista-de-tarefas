@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>Minhas tarefas</h1>
+
+        <form class="formulario" id="formulario">
+            <input
+                type="text"
+                id="campoTarefa"
+                placeholder="O que preciso fazer?"
+                autocomplete="off"
+            >
+            <button type="submit">Adicionar</button>
+        </form>
+
+        <div class="filtros">
+            <button class="filtro ativo" data-filtro="todas">Todas</button>
+            <button class="filtro" data-filtro="pendentes">Pendentes</button>
+            <button class="filtro" data-filtro="concluidas">Concluídas</button>
+        </div>
+
+        <ul class="lista" id="lista"></ul>
+
+        <div class="rodape">
+            <span id="contador">0 tarefas pendentes</span>
+            <button id="limparConcluidas">Limpar Concluídas</button>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,159 @@
+* {
+    margin: 0; /* Redefine margem padrão */
+    padding: 0; /* Redefine espaçamento padrão */
+    box-sizing: border-box; /* Redefine box-sizing */
+}
+
+body {
+    min-height: 100vh; /* Define altura mínima da tela */
+    background-color: #f7f7f8; /* Define cor de fundo */
+    font-family: 'Arial', Arial, Helvetica, sans-serif; /* Define fonte padrão */
+    padding: 40px 20px; /* Define espaçamento interno */
+    color: #1a1a24; /* Define cor do texto */
+}
+
+.container {
+    max-width: 500px; /* Define largura máxima do container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    background-color: #7375f3; /* Define cor de fundo do container */
+    border-radius: 16px; /* Define borda arredondada */
+    padding: 24px; /* Define espaçamento interno do container */
+}
+
+h1 {
+    font-size: 24px; /* Define tamanho da fonte do título */
+    margin-bottom: 20px; /* Define espaçamento inferior do título */
+}
+
+.formulario {
+    display: flex; /* Define layout flexível */
+    gap: 8px; /* Define espaçamento entre os elementos do formulário */
+    margin-bottom: 20px; /* Define espaçamento inferior do formulário */
+}
+
+.formulario input {
+    flex: 1; /* Faz o input ocupar o espaço disponível */
+    min-width: 0; /* Define largura mínima do input */
+    padding: 12px; /* Define espaçamento interno do input */
+    border: 1px solid #00000c; /* Define borda do input */
+    border-radius: 8px; /* Define borda arredondada do input */
+    font-size: 15px; /* Define tamanho da fonte do input */
+}
+
+.formulario input:focus {
+    outline: 2px solid #000702; /* Define contorno do input quando em foco */
+    border-color: transparent; /* Remove a cor da borda quando em foco */
+}
+
+.formulario button {
+    padding: 12px 20px; /* Define espaçamento interno do botão */
+    border: none; /* Remove borda do botão */
+    border-radius: 8px; /* Define borda arredondada do botão */
+    background-color: #e1e6e2; /* Define cor de fundo do botão */
+    color:#00000c; /* Define cor do texto do botão */
+    font-size: 15px; /* Define tamanho da fonte do botão */
+    cursor: pointer; /* Define cursor como pointer ao passar o mouse */
+}
+
+.filtros {
+    display: flex; /* Define layout flexível */
+    gap: 8px; /* Define espaçamento entre os elementos dos filtros */
+    margin-bottom: 16px; /* Define espaçamento inferior dos filtros */
+}
+
+.filtro {
+    padding: 8px 14px; /* Define o tamanho dos botões de filtro */
+    border: 1px solid #00000c; /* Define a cor da borda dos botões de filtro */
+    border-radius: 20px; /* Define borda arredondada dos botões de filtro */
+    background-color: #e1e6e2; /* Define cor de fundo dos botões de filtro */
+    font-size: 14px; /* Define tamanho da fonte dos botões de filtro */
+    cursor: pointer; /* Define cursor como pointer ao passar o mouse */
+}
+
+.filtro.ativo {
+    background-color: #090a00; /* Define cor de fundo do botão de filtro ativo */
+    border-color: #f6f6f8; /* Define cor da borda do botão de filtro ativo */
+    color: #ffffff; /* Define cor do texto do botão de filtro ativo */
+}
+
+.lista {
+    list-style: none; /* Remove marcadores da lista */
+    margin-bottom: 20px; /* Define espaçamento inferior da lista */
+}
+
+.item {
+    display: flex; /* Define layout flexível */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    gap: 12px; /* Define espaçamento entre os elementos do item */
+    padding: 12px 0; /* Define espaçamento interno do item */
+    border-bottom: 1px solid #ec3204; /* Define borda inferior do item */
+}
+
+.item input[type="checkbox"] {
+    width: 20px; /* Define largura do checkbox */
+    height: 20px; /* Define altura do checkbox */
+    cursor: pointer; /* Define cursor como pointer ao passar o mouse */
+    flex-shrink: 0; /* Impede que o checkbox encolha */
+}
+
+.item .texto {
+    flex: 1; /* Faz o texto ocupar o espaço disponível */
+    min-width: 0; /* Define largura mínima do texto */
+    word-break: break-word; /* Permite quebra de linha no texto */
+}
+
+.item.concluida .texto {
+    text-decoration: line-through; /* Adiciona linha no texto quando concluído */
+    color: #9a9aa8; /* Define cor do texto quando concluído */
+}
+
+.item .excluir {
+    border: none; /* Remove borda do botão de excluir */
+    background-color: transparent; /* Define cor de fundo transparente do botão de excluir */
+    color: #0a0200; /* Define cor do texto do botão de excluir */
+    font-size: 18px; /* Define tamanho da fonte do botão de excluir */
+    cursor: pointer; /* Define cursor como pointer ao passar o mouse */
+    flex-shrink: 0; /* Impede que o botão de excluir encolha */
+}
+
+.rodape {
+    display: flex; /* Define layout flexível */
+    justify-content: space-between; /* Distribui os elementos do rodapé com espaço entre eles */
+    align-items: center; /* Alinha os elementos do rodapé verticalmente ao centro */
+    font-size: 14px; /* Define tamanho da fonte do rodapé */
+    color: #000008; /* Define cor do texto do rodapé */
+}
+
+.rodape button {
+    border: none; /* Remove borda do botão do rodapé */
+    background-color: transparent; /* Define cor de fundo transparente do botão do rodapé */
+    color: #00000a; /* Define cor do texto do botão do rodapé */
+    font-size: 14px; /* Define tamanho da fonte do botão do rodapé */
+    cursor: pointer; /* Define cursor como pointer ao passar o mouse */
+    text-decoration: underline; /* Adiciona sublinhado ao texto do botão do rodapé */
+}
+
+.vazio {
+    text-align: center; /* Centraliza o texto */
+    color: #000007; /* Define cor do texto */
+    padding: 24px 0; /* Define espaçamento interno */
+}
+
+.item .editar {
+    border: none; /* Remove borda do botão de editar */
+    background-color: transparent; /* Define cor de fundo transparente do botão de editar */
+    color: #000008; /* Define cor do texto do botão de editar */
+    font-size: 14px; /* Define tamanho da fonte do botão de editar */
+    cursor: pointer; /* Define cursor como pointer ao passar o mouse */
+    flex-shrink: 0; /* Impede que o botão de editar encolha */
+}
+
+.campoEdicao {
+    flex: 1; /* Faz o campo de edição ocupar o espaço disponível */
+    min-width: 0; /* Define largura mínima do campo de edição */
+    padding: 6px 8px; /* Define espaçamento interno do campo de edição */
+    border: 1px solid #00000c; /* Define borda do campo de edição */
+    border-radius: 6px; /* Define borda arredondada do campo de edição */
+    font-size: 15px; /* Define tamanho da fonte do campo de edição */
+    font-family: inherit; /* Herda a fonte do elemento pai */
+}
