@@ -6,7 +6,7 @@ Lista de tarefas feita com HTML, CSS e JavaScript, sem bibliotecas.
 
 Foi meu segundo projeto, e o primeiro em que o HTML não estava todo pronto na página. Na calculadora os botões já existiam e eu só mexia neles. Aqui cada tarefa é criada pelo JavaScript na hora que eu adiciono, e isso mudou bastante a forma de pensar o código.
 
-[Acessar lista de tarefas](link do GitHub Pages)
+[Acessar lista de tarefas](https://hellenmayara.github.io/lista-de-tarefas/)
 
 ## Funcionalidades
 
